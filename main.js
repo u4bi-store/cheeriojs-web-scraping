@@ -18,5 +18,13 @@ request(target, function(err, response, body){
         $('.mt-4 li .pinned-repo-desc').each(function(index, title){
             console.log('레포 내용 : '+$(title).text());
         });
+
+        $('.mt-4 .pinned-repo-item').each(function(index, title){
+            var titleNode = $(title).find('.repo');
+            var contentNode = $(title).find('.pinned-repo-desc');
+
+            console.log('레포 타이틀 : '+$(titleNode).text());
+            console.log('레포   내용 : '+$(contentNode).text());
+        });
     }
 });
