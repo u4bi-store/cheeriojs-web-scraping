@@ -10,5 +10,10 @@ request(target, function(err, response, body){
         $('.user-profile-nav a .counter').each(function(index, title){
             console.log($(title).text());
         });
+
+        $('.mt-4 li .repo').each(function(index, title){
+            console.log('레포 타이틀 : '+$(title).text());
+        });
+        
     }
 });
